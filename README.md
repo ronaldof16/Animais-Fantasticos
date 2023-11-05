@@ -1,5 +1,5 @@
 # animais-fantasticos
-Projeto final do curso de JavaScript da Origamid
+O projeto ainda não está concluído
 
 Link da página: <https://ronaldof16.github.io/animais-fantasticos/>
 
