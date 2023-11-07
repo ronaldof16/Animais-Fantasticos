@@ -7,17 +7,17 @@ export default function outsideClick(element, events, callback) {
             setTimeout(() => {
                 html.addEventListener(userEvent, handlOutsideClick)
             });
-        })
+        });
         element.setAttribute(outside, "");
-    }
-    
+    };
+
     function handlOutsideClick(event) {
         if(!element.contains(event.target)) {
            element.removeAttribute(outside);
            events.forEach(userEvent => {
             html.removeEventListener(userEvent, handlOutsideClick)
-           })
+           });
            callback();
-        }
-    }
-}
+        };
+    };
+};

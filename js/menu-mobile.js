@@ -11,14 +11,12 @@ export default function initMenuMobile() {
         outsideClick(menuList, eventos, () => {
             menuList.classList.remove("active");
             menuButton.classList.remove("active");
-        })
-    }
+        });
+    };
 
     if(menuButton) {
         eventos.forEach(evento => {
             menuButton.addEventListener(evento, openMenu);
-        })
-    }
-}
-
-
+        });
+    };
+};
